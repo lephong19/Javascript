@@ -16,4 +16,4 @@ Map là cấu trúc dữ liệu dùng để lưu cặp ' key -> value '
 +keys():Lấy các key
 +values():Lấy các value
 +entries():Lấy toàn bộ
--for..each: value->key
+-for..each: value->key->map

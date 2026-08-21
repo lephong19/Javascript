@@ -44,3 +44,4 @@ function call3(map)
     return kq
 }
 console.log(call3(map))
+
