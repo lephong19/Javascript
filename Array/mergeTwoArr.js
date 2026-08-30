@@ -12,8 +12,8 @@ function merge(a,b)
     let aj=a.length-1
     // Tạo con trỏ di chuyển trên b
     let bi=0
-    let bj=b.length-1
-    while ((ai<=aj)&&(bi<=bj)) 
+    let bj=b.length-1// Có thể không cần
+    while ((ai<=aj)&&(bi<=bj)) // có thể viết ai<a.length và bi<b.length
     {
         if(a[ai]<b[bi]) 
         {

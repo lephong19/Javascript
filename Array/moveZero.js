@@ -10,21 +10,23 @@ function move(data)
     
     let i=0
     let j=1
-    while(i<data.length && j<data.length-1)
+    while(j<=data.length-1)
     {
-        if(data[i]*data[j]===0&&data[i]!==0)
-        {
-            i++
-            j++
-            continue
-        }
-        if(data[i]*data[j]===0&&data[j]!==0)
-        {
-            let temp=data[i]
-            data[i]=data[j]
-            data[j]=temp
-            j++
-        }
+       if(data[i]!==0&&data[j]===0)
+       {
+        i++
+        j++
+       }else if(data[i]===0&&data[j]!==0)
+       {
+        let temp=data[i]
+        data[i]=data[j] 
+        data[j]=temp
+        j++
+       }else if(data[i]===0&&data[j]===0)
+       {
+        i++
+        j++
+       }
     }
     return data
 }
