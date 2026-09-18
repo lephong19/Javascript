@@ -1,0 +1,1 @@
+Rest Parameter... dùng để gom nhiều argument(tham số) thành một array
