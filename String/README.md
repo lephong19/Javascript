@@ -7,7 +7,7 @@
 ==============================
 - Nối hai hoặc nhiều chuỗi: .concat()
 - In chuỗi con từ đoạn: .slice[index start, index end]
-
+- .slice(1) từ index 1 dến cuối
 - In lặp lại n lần chuỗi : .repeat(count)
 
 ==============================
@@ -15,7 +15,20 @@
 - Loại bỏ khoảng trắng ở đầu: .trimStart()
 - Loại bỏ khoảng trắng ở cuối: .trimEnd()
 ==============================
-- Tách chuỗi thành mảng các chuỗi : .split(Ký tự phân tách)
+- Tách chuỗi thành mảng các chuỗi : .split(Ký tự phân tách)s
 
 ==============================
 - Kiểm tra chuỗi có tồn tại ký tự không: .includes(ký tự)
+
+==============================
+- Thay thế : str.replace('Từ cũ', 'Từ mới')
+- Thay thế tất cả : str.replaceAll('Từ cũ','Từ mới')
+
+==============================
+- Ký tự trong JS:
++ /[0-9]/.test(c) -> isdigit
++ /a-zA-Z/.test(c) -> isalpha
++ /[a-zA-Z0-9]/.test(c) -> isalnum
++ /\s/.test(c) -> isspace
++ /[a-z]/.test(c) -> islower
++ /[A-Z]/.test(c) -> issupper
