@@ -173,7 +173,7 @@ function transform(users3){
         id:users3.id,
         name:users3.name,
         city:users3.address.city,
-        adress:users3.address.district,
+        address:users3.address.district,
     }
     return newObj
 }

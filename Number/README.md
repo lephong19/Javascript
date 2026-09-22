@@ -12,5 +12,11 @@ console.log(num.toLocaleString('vi-VN'));
  Kết quả: "1.000.000"
 
 ===============================
-So Sánh c++ và JS
-INT_MIN=Number.MIN_SAFE_INTEGER
+Number.MIN_SAFE_INTEGER: Số nguyên âm nhỏ nhất mà JS đảm bảo chính xác 
+
+
+
+Number(true)=1
+Number(false)=0
+Number(null)=0
+Number(underfined)=NaN

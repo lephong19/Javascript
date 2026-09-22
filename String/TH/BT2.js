@@ -5,7 +5,7 @@ function output(str){
      if(typeof str !== 'string' || str.trim()==='')
         throw new Error('Loi chuoi str')
 
-    const convert= str.trim().split(' ')
+    const convert= str.trim().split(/\s+/)
     let res=""
     for(let x of convert){
         
