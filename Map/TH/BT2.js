@@ -109,5 +109,19 @@ const lastOrders=[
 //101 → {10, 20}
 //102 → {30}
 function setProduct(lastOrders){
-   // Giong Set->TH->BT2
+   // valite
+   const map=new Map()
+   for(let x of lastOrders){
+    // valite
+    const {id,userId,productId}=x
+    let listProductId=map.get(userId)
+    if(!listProductId){
+        listProductId=new Set()
+    }
+       listProductId.add(productId)
+       map.set(userId,listProductId)
+   }
+
+   return map
 }
+console.log(setProduct(lastOrders))

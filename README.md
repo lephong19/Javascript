@@ -30,7 +30,7 @@ JavaScript Core
 │      ├── Spread
 │      ├── Shorthand Property
 │      ├── Computed Property
-│      └── Optional Chaining (?.)
+│      └── Optional Chaining (?.) Chỉ nhận null và undefined
 │
 ├── 6. String
 │      ├── String Methods
@@ -46,7 +46,7 @@ JavaScript Core
 │
 ├── 11. Map
 │
-├── 12. JSON
+├── 12. JSON(Javascript Object Notation)
 │
 ├── 13. Error_Handling
 │
