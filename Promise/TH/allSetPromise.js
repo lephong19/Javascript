@@ -1,0 +1,35 @@
+function getUser() {
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            resolve('User')
+        }, 2000)
+    })
+}
+
+function getOrders() {
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            resolve('Orders')
+        }, 1000)
+    })
+}
+
+function getNotifications() {
+    return new Promise((resolve,reject) => {
+        setTimeout(() => {
+            reject('Notifications')
+        }, 3000)
+    })
+}
+
+Promise.any([
+    getUser(),
+    getOrders(),
+    getNotifications()
+])
+.then((data) => {
+    console.log(data)
+})
+.catch((data)=>{
+    console.log(data)
+})

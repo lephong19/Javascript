@@ -14,12 +14,17 @@
 4. Promise chaining : .then().then().then() ,là chuỗi các bước xử lý promise , nối với nhau bằng return
 5. Promise.resolve(): Tạo Promise fulfilled
 6. Promise.reject(): Tạo Promise rejected
-7. Promise.all(): Chờ nhiều Promise cùng hoàn thành(thành công)
-8. Promise.allSettled(): Lấy kết quả của tất cả Promise dù thành công/thất bại
-9. Promise.race(): Lấy Promise hoàn thành đầu tiên(setTimeout min I)
-10. Promise.any(): Lấy Promise thành công đầu tiên
+7. Promise.all(): Chờ nhiều Promise cùng hoàn thành(thành công),nhận array
+- Nếu 1 reject -> chỉ in reject đó 
+8. Promise.allSettled(): Lấy kết quả của tất cả Promise dù thành công/thất bại kèm status, truy cập bằng then()
+9. Promise.race(): Lấy Promise hoàn thành đầu tiên(setTimeout min I có thể lấy reject )
+10. Promise.any(): Lấy Promise thành công đầu tiên(chỉ tính resolve)
 11. Promise + async/await: Cách viết hiện đại dựa trên Promise
-- async/await : 
+- async/await :
++ Khi đặt async trước function thì function luôn trả về một Promise , dùng then khi nó thành công , catch khi nó có throw new Error
++ await: Dùng để chở một Promise hoàn thành
+
+
 + function get(){
     return new Promise((resolve,reject)=>{
         setTimeout(()=>{
