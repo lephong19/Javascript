@@ -1,7 +1,7 @@
 const now = new Date();
 
 console.log("Date:", now);
-
+console.log(now.toISOString().split("T")[0])
 console.log("Năm:", now.getFullYear());
 console.log("Tháng:", now.getMonth() + 1);// Bắt đầu từ 0 nên +1
 console.log("Ngày:", now.getDate());

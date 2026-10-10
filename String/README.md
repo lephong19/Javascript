@@ -32,3 +32,15 @@
 + /\s/.test(c) -> isspace
 + /[a-z]/.test(c) -> islower
 + /[A-Z]/.test(c) -> issupper
++ ^ : Bắt đầu chuỗi
++ $ : Kết thúc chuỗi
++ \d : Một chữ số từ 0->9
++ \D : Không phải chữ số
++ \s : Khoảng trắng , tab, xuống dòng
++ {n}: Đúng n lần xuất hiện
++ {n,m}: Từ n -> m lần 
++ [abc] : Một ký tự a , b hoặc c
++ [^abc]: không được là a , b , c 
++ a|b : a hoặc b 
+
+===============================
