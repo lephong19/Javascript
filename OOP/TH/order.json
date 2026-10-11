@@ -1,0 +1,26 @@
+[
+  {
+    "id": "095d5a93-83d4-42f5-81f9-adf8265e9e8d",
+    "customerName": "Nguyen Van A",
+    "customerEmail": "a@example.com",
+    "items": [
+      {
+        "productId": "782a4650-4433-4925-8c18-d5f383e98ca1",
+        "name": "Laptop",
+        "price": 14000000,
+        "quantity": 3,
+        "subtotal": 42000000
+      },
+      {
+        "productId": "2f2d3ad7-f154-48da-9a76-c9153d54b9a9",
+        "name": "Mouse",
+        "price": 800000,
+        "quantity": 1,
+        "subtotal": 800000
+      }
+    ],
+    "total": 42800000,
+    "status": "pending",
+    "createdAt": "2026-10-11T07:41:57.767Z"
+  }
+]
