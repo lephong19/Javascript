@@ -6,7 +6,7 @@
 
 ==============================
 - Nối hai hoặc nhiều chuỗi: .concat()
-- In chuỗi con từ đoạn: .slice[index start, index end]
+- In chuỗi con từ đoạn: .slice[index start, index end]-> tính (index,lastindex-1)
 - .slice(1) từ index 1 dến cuối
 - In lặp lại n lần chuỗi : .repeat(count)
 
@@ -44,3 +44,7 @@
 + a|b : a hoặc b 
 
 ===============================
++ test(): Kiểm tra có khớp không
++ match(): Lấy những phần khớp
++ replace(): Thay thế phần khớp
++ search(): Tìm vị trí khớp
