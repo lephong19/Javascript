@@ -18,9 +18,9 @@ Ta có const user ={
 Lại có các lần lượt là : a , b , c
 Th1: a=user thì lúc này a và user cùng trỏ đến Object gọi là Obj chứa name, city, address
 
-Th2: b={...user} lúc này b sao chép user tạo ra bản sao gồm name,age và address lúc này cả b và user đều dùng chung(trỏ tới),b tác động lên address thì address ở user cũng thay đổi và b tác động lên name , age thì user không bị thay đổi
+Th2: b={...user} lúc này b sao chép user tạo ra bản sao gồm name,age và riêng address:b và user đều trỏ tới,b tác động lên address thì address ở user cũng thay đổi và b tác động lên name , age thì user không bị thay đổi
 
-Th3: c=structureClone(user) gọi là deep copy lúc này c sao chép toàn bộ những thứ có trong user mọi tác động ở c không thay đổi ở user 
+Th3: c=structureClone(user) gọi là deep copy lúc này c sao chép toàn bộ những thứ có trong user mọi tác động ở c không thay đổi ở user , kể cả có object lồng
 
 ============================
 - Đặt default :  nếu dữ liệu không có giá trị(undefined) thì dùng giá trị mặc định thay thế,nếu đã tồn tại thì sẽ không thay đổi -> default không được sử dụng
@@ -70,3 +70,26 @@ console.log(user.address?.city); Lúc này user.address sẽ dừng lại trả 
 -> ?. chỉ dừng khi gặp null hoặc undefined
 
 - Vậy ?? là gì : Là giá trị mặc định , nó hỏi rằng khi dữ liệu kiểm tra null hoặc undefined thì tôi sẽ dùng giá trị gì 
+
+====================
+Object.freeze() 
+const user=Object.freeze({
+    name:"Nguyen",
+    age:20,
+    address:{
+        city:"HCM"
+    }
+})
++ Không được sửa value , thêm key, xóa key , Nhưng có thể tác động lên object lồng là address
+=============
+Object seal()
+const user=Object.seal({
+    name:"Nguyen",
+    age:20,
+    address:{
+        city:"HCM"
+    }
+})
++ Được sửa value , thêm key, xóa key , Nhưng có thể tác động lên object lồng là address
+================
+- Object.hasOwn(obj,key): Kiểm tra key có tồn tại trực tiếp trong obj không
